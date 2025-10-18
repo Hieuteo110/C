@@ -4,7 +4,8 @@ int main ()
 	int n,s=0;
 	printf("Nhap so nguyen n: ");
 	scanf("%d",&n);
-	while (1>n||n>100){
+	while (1>n||n>100)
+	{
 		printf("Moi nhap lai so nguyen n: ");
 		scanf("%d",&n);
 	}
