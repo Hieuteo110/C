@@ -6,7 +6,7 @@ int main()
 	nhaplai:
 		printf("Nhap so nguyen duong n: ");
 		scanf("%d",&n);
-	if (n<0) goto nhaplai;
+	if (n<=0) goto nhaplai;
 	int a[n];
 	a[0]=1;
 	a[1]=1;
