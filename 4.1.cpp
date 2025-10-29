@@ -4,7 +4,6 @@
 int main() 
 {
     int n, i, nguyento=0;
-
 	nhaplai:
 	    printf("Nhap so nguyen duong n: ");
 	    scanf("%d", &n);
@@ -14,13 +13,11 @@ int main()
     else 
 	{
         for (i = 2; i <= sqrt(n); i++) 
-		{
             if (n % i == 0) 
 			{
                 nguyento = 1;
                 break;
             }
-        }
         if (nguyento==0)
             printf("%d la so nguyen to\n", n);
         else
@@ -28,4 +25,3 @@ int main()
     }
     return 0;
 }
-
