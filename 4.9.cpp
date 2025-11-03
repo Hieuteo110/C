@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main ()
 {
-	int n,i,check=0;
+	int n,i;
 	float min=0,max=0;
 	nhap:
 		printf("Nhap so nguyen duong n: ");
