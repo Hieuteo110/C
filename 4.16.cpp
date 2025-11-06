@@ -16,3 +16,4 @@ int main ()
 		if(n==xau[i]) printf("%d ",i);
 return 0;
 }
+
