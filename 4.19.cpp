@@ -6,7 +6,7 @@ int main ()
 	fflush(stdin);
 	printf("Nhap vao ten: ");
 	gets(a);
-	int n=strlen(a),j=-1,i;
+	int n=strlen(a),j,i;
 	for (i=0;i<n;i++)
 		if (a[i]==' ') 
 		{
