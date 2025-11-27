@@ -1,0 +1,25 @@
+#include <stdio.h>
+void cautao(int n)
+{
+	int a[10]={0},d;
+	while(n>0)
+	{
+		d=n%10;
+		a[d]=1;
+		n/=10;
+	}
+	printf("Duoc tao boi cac chu so: ");
+	for (int i=0;i<10;i++)
+		if(a[i]!=0) printf("%d ",i);
+}
+int main ()
+{
+	int n;
+	nhap:
+		printf("Nhap so nguyen duong n: ");scanf("%d",&n);
+	if (n<0) goto nhap;
+	if (n==0) printf("0");
+	else cautao(n);
+
+return 0;
+}
