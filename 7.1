@@ -4,7 +4,7 @@ void doc ()
 {
 	FILE *f;
 	char ch;
-	f=fopen("output.txt","r");
+	f=fopen("output8.txt","r");
     while (feof(f)==0)
     {
     	ch=getc(f);
@@ -15,16 +15,21 @@ void doc ()
 int main() 
 {
     FILE *f, *g;
-    char s;
+    char s,ch[100];
     int d= 0;
-    f=fopen("input.txt", "r");
+    f=fopen("input8.txt","w");
+    printf("Nhap vao xau ki tu: ");
+    gets(ch);
+    fprintf(f,"%s",ch);
+	fclose(f);
+    f=fopen("input8.txt", "r");
     while ((s = fgetc(f)) != EOF) 
 	{
         if (s == 'A')
             d++;
     }
     fclose(f);
-    g=fopen("output.txt", "w");
+    g=fopen("output8.txt", "w");
     fprintf(g, "So ky tu 'A' trong file la: %d\n", d);
     fclose(g);
     doc();
