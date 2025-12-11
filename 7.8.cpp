@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+void doc ()
+{
+	FILE *f;
+	char ch;
+	f=fopen("output8.txt","r");
+    while ((ch = fgetc(f)) != EOF)
+    	printf("%c",ch);
+    fclose(f);  
+}
+int main() 
+{
+    FILE *f, *g;
+    char s,ch[100];
+    int d= 0;
+    f=fopen("input8.txt","w");
+    printf("Nhap vao xau ki tu: ");
+    gets(ch);
+    fprintf(f,"%s",ch);
+	fclose(f);
+    f=fopen("input8.txt", "r");
+    while ((s = fgetc(f)) != EOF) 
+        if (s == 'A') d++;
+    fclose(f);
+    g=fopen("output8.txt", "w");
+    fprintf(g, "So ky tu 'A': %d\n", d);
+    fclose(g);
+    doc();
+    return 0;
+}
+
